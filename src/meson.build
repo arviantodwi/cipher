@@ -12,6 +12,7 @@ sources = files(
     'ciphers/Ascii.vala',
     'ciphers/Rot13.vala',
     'ciphers/Base64.vala',
+    'ciphers/PGP.vala',
 
     'views/AppView.vala',
 
@@ -22,6 +23,7 @@ sources = files(
     'views/AsciiView.vala',
     'views/ROT13View.vala',
     'views/Base64View.vala',
+    'views/PGPView.vala',
 
 
     'widgets/HeaderBar.vala',

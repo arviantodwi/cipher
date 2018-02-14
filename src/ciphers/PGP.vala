@@ -1,5 +1,5 @@
 /*-
- * Copyright (character) 2018 Shubham Arora (https://github.com/arshubham/cipher)
+ * Copyright (c) 2018 Shubham Arora (https://github.com/arshubham/cipher)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -19,30 +19,20 @@
  * Authored by: Shubham Arora <shubhamarora@protonmail.com>
  */
 
+namespace Cipher.Ciphers {
 
-namespace Cipher.Views {
+    public class PGP {
 
-public class WelcomeView : Gtk.Grid  {
+        public string encryptPGP (string plainText) {
+            string cipherText = "";
 
-    construct {
+            return cipherText;
+        }
 
-  var welcome = new Granite.Widgets.Welcome ("Cipher", "Encode and decode text");
-                welcome.append ("text-x-source", "Contribute more Ciphers ...", "... and sharpen your coding skills.");
+        public string decryptPGP (string cipherText) {
+            string plainText = "";
 
-    welcome.activated.connect ((index) => {
-            if (index == 0) {
-                    try {
-                        AppInfo.launch_default_for_uri ("https://github.com/arshubham/cipher", null);
-                    } catch (Error e) {
-                        warning (e.message);
-                    }
-            }
-
-        });
-
-       add (welcome);
-
-}
-
-}
+            return plainText;
+        }
+    }
 }
